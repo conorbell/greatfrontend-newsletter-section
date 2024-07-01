@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Toast from './ui/Toast';
 import TextInput from './ui/TextInput';
 import Badge from './ui/Badge';
+import abstract from '../assets/img/abstract.jpg';
 
 type VariantType = 'neutral' | 'error' | 'warning' | 'success' | 'brand';
 
@@ -211,7 +212,7 @@ export default function NewsLetter() {
               <img
                 alt='abstract'
                 className=' rounded-xl object-cover w-[592px]'
-                src='../assets/img/abstract.jpg'
+                src={abstract}
               />
             </article>
           </section>
