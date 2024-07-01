@@ -211,7 +211,7 @@ export default function NewsLetter() {
               <img
                 alt='abstract'
                 className=' rounded-xl object-cover w-[592px]'
-                src='../../public/img/abstract.jpg'
+                src='../assets/img/abstract.jpg'
               />
             </article>
           </section>

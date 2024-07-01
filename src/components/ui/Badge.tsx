@@ -4,7 +4,7 @@ import { cn } from '../../utils/utils';
 export interface BadgeProps {
   size?: 'small' | 'medium' | 'large';
   variant?: 'neutral' | 'error' | 'warning' | 'success' | 'brand';
-  className?: string;
+  className: string;
   children?: React.ReactNode;
 }
 
@@ -39,7 +39,6 @@ export default function Badge({
   className,
   ...props
 }: BadgeProps) {
-  console.log('variant in badge', variant);
   return (
     <div
       {...props}

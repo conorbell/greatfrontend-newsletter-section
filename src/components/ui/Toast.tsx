@@ -1,6 +1,3 @@
-'use client';
-import React from 'react';
-
 import { useEffect, useState } from 'react';
 import { cva } from 'class-variance-authority';
 import { cn } from '../../utils/utils';
@@ -37,6 +34,7 @@ export default function Toast({
   className,
   duration,
   children,
+
   ...props
 }: ToastProps) {
   const [visible, setVisible] = useState(true);

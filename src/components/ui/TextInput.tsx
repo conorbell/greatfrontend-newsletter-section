@@ -1,6 +1,3 @@
-'use client';
-import React from 'react';
-
 //Props for input
 type InputProps = {
   type?: 'text' | 'email' | 'password';
