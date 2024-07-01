@@ -1,10 +1,11 @@
-import React from 'react';
 import { cva } from 'class-variance-authority';
 import { cn } from '../../utils/utils';
 
 export interface BadgeProps {
   size?: 'small' | 'medium' | 'large';
   variant?: 'neutral' | 'error' | 'warning' | 'success' | 'brand';
+  className?: string;
+  children?: React.ReactNode;
 }
 
 const badgeVariants = cva(
