@@ -1,16 +1,15 @@
 import './App.css';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import Footer from './components/Footer';
 
 import NewsLetter from './components/NewsLetter';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
-      <NewsLetter />
-      <ToastContainer />
-      <Footer />
+      <main className=' min-h-[812px] flex flex-col gap-4 justify-center py-7 px-4 md:min-h-[1024px] lg:min-h-[768px] '>
+        <NewsLetter />
+        <Footer />
+      </main>
     </>
   );
 }
