@@ -9,6 +9,7 @@ interface ToastProps {
   variant: 'neutral' | 'error' | 'warning' | 'success' | 'brand';
   toastMessage: string;
   duration?: number;
+  className?: string;
   children?: React.ReactNode;
 }
 

@@ -4,13 +4,13 @@ import { useState, useEffect } from 'react';
 import Toast from './ui/Toast';
 import TextInput from './ui/TextInput';
 import Badge from './ui/Badge';
-import Footer from './Footer';
-type Props = {};
 
-export default function NewsLetter({}: Props) {
+type VariantType = 'neutral' | 'error' | 'warning' | 'success' | 'brand';
+
+export default function NewsLetter() {
   const [toastState, setToastState] = useState({
     visible: false,
-    variant: 'neutral',
+    variant: 'neutral' as VariantType,
     message: '',
   });
 

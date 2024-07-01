@@ -1,15 +1,5 @@
 'use client';
-import React, { useState } from 'react';
-
-/**
- * Error messages for input
- * Email is required
- * Password should contain(criteria)
- *
- * Label, placeholder, hint text, and error message should be customizable
- *
- * State for Normal, filled, focused, disabled, error
- */
+import React from 'react';
 
 //Props for input
 type InputProps = {

@@ -1,7 +1,3 @@
-import React from 'react';
-
-type Props = {};
-
 export default function Footer() {
   return (
     <footer className='credits '>

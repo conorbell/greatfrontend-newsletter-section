@@ -2,7 +2,7 @@ import React from 'react';
 import { cva } from 'class-variance-authority';
 import { cn } from '../../utils/utils';
 
-interface BadgeProps {
+export interface BadgeProps {
   size?: 'small' | 'medium' | 'large';
   variant?: 'neutral' | 'error' | 'warning' | 'success' | 'brand';
 }
