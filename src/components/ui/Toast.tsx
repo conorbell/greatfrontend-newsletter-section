@@ -39,15 +39,15 @@ export default function Toast({
   children,
   ...props
 }: ToastProps) {
-  //   const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(true);
 
-  //   useEffect(() => {
-  //     const timer = setTimeout(() => setVisible(false), duration);
-  //     return () => clearTimeout(timer);
-  //   }, [duration]);
-  //   console.log('children', children);
+  useEffect(() => {
+    const timer = setTimeout(() => setVisible(false), duration);
+    return () => clearTimeout(timer);
+  }, [duration]);
+  console.log('children', children);
 
-  //   if (!visible) return null;
+  if (!visible) return null;
 
   return (
     <div {...props} className={cn(toastVariants({ variant }), className)}>
